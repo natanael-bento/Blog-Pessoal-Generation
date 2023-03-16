@@ -14,7 +14,6 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 @Table(name = "tb_postagens")
-
 public class Postagem {
 
 	@Id
