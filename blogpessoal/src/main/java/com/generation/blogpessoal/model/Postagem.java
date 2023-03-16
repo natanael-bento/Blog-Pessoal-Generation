@@ -35,13 +35,14 @@ public class Postagem {
 	@UpdateTimestamp
 	private LocalDateTime data;
 
-	
+	public Postagem() {}
 	
 	
 	public Postagem(Long id,
 			@NotBlank(message = "O atributo titulo é obrigatorio!") @Size(min = 5, max = 100, message = "O atributo titulo deve conter no minimo 10 e no maximo 1000 caracteres") String titulo,
 			@NotBlank(message = "O atributo texto é obrigatorio!") @Size(min = 10, max = 1000, message = "O atributo texto deve conter no minimo 10 e no maximo 1000 caracteres") String texto,
 			LocalDateTime data) {
+		
 		super();
 		this.id = id;
 		this.titulo = titulo;
